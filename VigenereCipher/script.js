@@ -42,6 +42,15 @@ function generateMatrix() {
     }
 }
 
+function toggleMatrics() {
+    let state = document.getElementById("matrix");
+    if (state.style.display === "none") {
+        state.style.display = "grid";
+    } else {
+        state.style.display = "none";
+    }
+}
+
 function encrypttext() {
     row_marks = [];
     column_marks = [];
