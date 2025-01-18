@@ -9,24 +9,24 @@
     <meta charset="UTF-8">
     <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayFair</title>
+    <title>Vigenere</title>
 </head>
 
-<body>
-    <h1 class="text-center">PlayFair Cipher</h1>
-    <div class="d-flex justify-content-center row align-items-center border p-3 border-2">
-        <input type="text" value="bhargav" class="col-12" name="key" id="key" pattern="[A-Za-z]+" placeholder="KEY"><br>
-        <input type="text" value="bhatt" y class="col-12" name="plaintext" pattern="[A-Za-z]+" id="plaintext" placeholder="PLAINTEXT">
+<body onload="generateMatrix()">
+    <h1 class="text-center">Vigenere Cipher</h1>
+    <div class="d-flex justify-content-center row align-items-center border w-100 p-3 border-2">
+        <input type="text" value="abc" class="col-12" name="key" id="key" pattern="[A-Za-z]+" placeholder="KEY"><br>
+        <input type="text" value="xyzhxy" y class="col-12" name="plaintext" pattern="[A-Za-z]+" id="plaintext" placeholder="PLAINTEXT">
         <button class="col-3" onclick="encrypttext()">Encrypt</button>
     </div>
-    <div class="d-flex justify-content-center row align-items-center border p-3">
-        <div class="col-6 m-0 p-0">
+    <div class="d-flex justify-content-center row align-items-center border p-3 w-100">
+        <div class="col-12 m-0 p-0">
             <h2 class="text-center">Metrics</h2>
             <div class="matrix text-center justify-content-center " id="matrix">
                 <!-- Generate cells -->
             </div>
         </div>
-        <div class="col-6 m-0 p-0">
+        <div class="col-12 m-0 p-0">
             <h2 class="text-center">Cypher Text </h2>
             <div id="cyphertext" class="text-center"></div>
         </div>

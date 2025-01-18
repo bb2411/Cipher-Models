@@ -1,0 +1,19 @@
+.matrix {
+    display: grid;
+    float: center;
+    grid-template-columns: repeat(26, 30px);
+    gap: 3px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+footer {
+    margin-top: auto;
+}
